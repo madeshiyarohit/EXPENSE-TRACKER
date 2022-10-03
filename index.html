@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker || Rohit Madeshiya</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="mainBox">
+          <h2>Expense Tracker</h2>
+
+          <h3>Add New Transaction</h3>
+          <div id="myForm">
+            <label for="text">Text | Description</label>
+            <input
+              type="text"
+              name="text"
+              id="title"
+              placeholder="Enter title of your Transaction"
+              required
+            />
+            <label for="transaction">Type of Transaction</label>
+            <div class="type">
+              <p>Credit</p>
+              <input type="radio" name="transaction" id="credit" />
+              <p>Debit</p>
+              <input type="radio" name="transaction" id="debit" />
+            </div>
+
+            <label for="money">Amount</label>
+            <input
+              type="tel"
+              name="money"
+              placeholder="Enter your amount"
+              id="money"
+              required
+              pattern="[0-9]{1,}"
+            />
+            <button type="submit" onclick="moneyHandler()">Submit</button>
+          </div>
+        </div>
+        <div class="mainBox mainBox-two">
+          <div class="balanceBox">
+            <h3>Your Balance</h3>
+            <h2 id="availBalance">$</h2>
+            <div class="moneyBox">
+              <div class="left">
+                <h3>INCOME</h3>
+                <p id="incomeValue"></p>
+              </div>
+              <div class="right">
+                <h3>Expense</h3>
+                <p id="expenseValue"></p>
+              </div>
+            </div>
+            <div class="historyBox">
+              <h2>History</h2>
+              <div class="transactioBox" id="transactioBox"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

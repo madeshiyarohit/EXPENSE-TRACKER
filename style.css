@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #1d1d1d;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+}
+.wrapper > h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+.mainBox {
+  width: 50%;
+}
+.mainBox > h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+.mainBox > h3 {
+  font-size: 24px;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 5px;
+  border-bottom: 1.5px solid grey;
+}
+.mainBox:first-child > div {
+  width: 80%;
+  margin: 24px auto 0 auto;
+}
+div label {
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+}
+div > input {
+  margin: 8px 0 16px 0;
+  width: 100%;
+  font-size: 16px;
+  padding: 5px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.type {
+  display: flex;
+  margin: 8px 0 16px 0;
+  justify-content: flex-start;
+}
+.type input {
+  margin: 0 36px 0 16px;
+  border: none;
+  outline: none;
+}
+button {
+  width: 100%;
+  padding: 8px 0;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: #39cccc;
+  color: #1d1d1d;
+}
+.mainBox:nth-child(2) {
+  padding: 20px 0;
+  box-sizing: border-box;
+  max-height: 100vh;
+  height: 100%;
+  overflow-y: scroll;
+}
+.mainBox:nth-child(2)::-webkit-scrollbar {
+  display: none;
+}
+.mainBox-two .balanceBox h2 {
+  font-size: 36px;
+  margin-top: 8px;
+}
+.moneyBox {
+  margin-top: 16px;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 80%;
+}
+.moneyBox .left,
+.moneyBox .right {
+  width: 50%;
+  text-align: center;
+  padding: 10px 0;
+}
+.moneyBox .left {
+  border-right: 2px solid rgba(0, 0, 0, 0.3);
+}
+.moneyBox h3 {
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: normal;
+}
+.moneyBox p {
+  font-weight: bold;
+}
+.historyBox h2 {
+  font-size: 24px !important;
+}
+.transactioBox {
+  margin-top: 12px;
+  width: 80%;
+}
+
+.transactioBox div {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 5px;
+  background-color: #fff;
+}
+
+.transactioBox div p {
+  font-size: 20px;
+}
+.transactioBox div span {
+  font-weight: bold;
+  font-size: 20px;
+}
+.moneyCredit {
+  border-bottom: 2px solid green;
+}
+.moneyDeduct {
+  border-bottom: 2px solid red;
+}
+
+#incomeValue {
+  color: #008000;
+  font-size: 24px;
+}
+
+#expenseValue {
+  color: #ff0000;
+  font-size: 24px;
+}
